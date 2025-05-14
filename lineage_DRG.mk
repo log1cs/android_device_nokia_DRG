@@ -19,6 +19,8 @@ PRODUCT_MANUFACTURER := HMD Global
 PRODUCT_MODEL := Nokia 6.1 Plus
 PRODUCT_NAME := lineage_DRG
 
+PRODUCT_GMS_CLIENTID_BASE := android-hmd
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="Dragon_00WW 10 QKQ1.190828.002 00WW_4_150 release-keys" \
     BuildFingerprint=Nokia/Dragon_00WW/DRG_sprout:10/QKQ1.190828.002/00WW_4_150:user/release-keys \
