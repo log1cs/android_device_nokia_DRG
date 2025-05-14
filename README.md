@@ -18,4 +18,9 @@ It was released in July 2018.
 
 ![Nokia 6.1 Plus](https://fdn2.gsmarena.com/vv/pics/nokia/nokia-x6-3.jpg)
 
-**Copyright 2020 - The LineageOS Project**
+```
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+```
