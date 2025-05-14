@@ -6,17 +6,6 @@
 # Vendor blobs
 $(call inherit-product, vendor/nokia/DRG/DRG-vendor.mk)
 
-# Set Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 27
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-PRODUCT_PACKAGES += \
-    AvoidAppsInCutoutOverlay \
-    NoCutoutOverlay
-
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -41,9 +30,20 @@ PRODUCT_GMS_CLIENTID_BASE := android-hmd
 PRODUCT_PACKAGES += \
     init.DRG.target.rc
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
+PRODUCT_PACKAGES += \
+    AvoidAppsInCutoutOverlay \
+    NoCutoutOverlay
+
 # Power
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+# Set Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 27
 
 # Inherit from nokia sdm660-common
 $(call inherit-product, device/nokia/sdm660-common/common.mk)
