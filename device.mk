@@ -10,6 +10,10 @@ $(call inherit-product, vendor/nokia/DRG/DRG-vendor.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio.primary.sdm660
+
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
